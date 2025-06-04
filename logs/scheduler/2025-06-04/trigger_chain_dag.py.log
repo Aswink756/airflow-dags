@@ -7149,3 +7149,45 @@
 [2025-06-04T15:47:56.219+0000] {logging_mixin.py:188} INFO - [2025-06-04T15:47:56.218+0000] {dag.py:3036} INFO - Sync 1 DAGs
 [2025-06-04T15:47:56.269+0000] {logging_mixin.py:188} INFO - [2025-06-04T15:47:56.269+0000] {dag.py:3823} INFO - Setting next_dagrun for trigger_demo_etl to 2025-06-04 00:00:00+00:00, run_after=2025-06-05 00:00:00+00:00
 [2025-06-04T15:47:56.304+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/trigger_chain_dag.py took 0.157 seconds
+[2025-06-04T15:48:26.499+0000] {processor.py:161} INFO - Started process (PID=1722) to work on /opt/airflow/dags/trigger_chain_dag.py
+[2025-06-04T15:48:26.500+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/trigger_chain_dag.py for tasks to queue
+[2025-06-04T15:48:26.503+0000] {logging_mixin.py:188} INFO - [2025-06-04T15:48:26.502+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/trigger_chain_dag.py
+[2025-06-04T15:48:26.529+0000] {processor.py:840} INFO - DAG(s) 'trigger_demo_etl' retrieved from /opt/airflow/dags/trigger_chain_dag.py
+[2025-06-04T15:48:26.547+0000] {logging_mixin.py:188} INFO - [2025-06-04T15:48:26.547+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-06-04T15:48:26.566+0000] {logging_mixin.py:188} INFO - [2025-06-04T15:48:26.566+0000] {dag.py:3823} INFO - Setting next_dagrun for trigger_demo_etl to 2025-06-04 00:00:00+00:00, run_after=2025-06-05 00:00:00+00:00
+[2025-06-04T15:48:26.590+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/trigger_chain_dag.py took 0.094 seconds
+[2025-06-04T15:49:33.915+0000] {processor.py:161} INFO - Started process (PID=61) to work on /opt/airflow/dags/trigger_chain_dag.py
+[2025-06-04T15:49:33.918+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/trigger_chain_dag.py for tasks to queue
+[2025-06-04T15:49:33.928+0000] {logging_mixin.py:188} INFO - [2025-06-04T15:49:33.928+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/trigger_chain_dag.py
+[2025-06-04T15:49:33.984+0000] {processor.py:840} INFO - DAG(s) 'trigger_demo_etl' retrieved from /opt/airflow/dags/trigger_chain_dag.py
+[2025-06-04T15:49:34.142+0000] {logging_mixin.py:188} INFO - [2025-06-04T15:49:34.142+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-06-04T15:49:34.175+0000] {logging_mixin.py:188} INFO - [2025-06-04T15:49:34.175+0000] {dag.py:3823} INFO - Setting next_dagrun for trigger_demo_etl to 2025-06-04 00:00:00+00:00, run_after=2025-06-05 00:00:00+00:00
+[2025-06-04T15:49:34.219+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/trigger_chain_dag.py took 0.310 seconds
+[2025-06-04T15:50:04.712+0000] {processor.py:161} INFO - Started process (PID=125) to work on /opt/airflow/dags/trigger_chain_dag.py
+[2025-06-04T15:50:04.714+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/trigger_chain_dag.py for tasks to queue
+[2025-06-04T15:50:04.717+0000] {logging_mixin.py:188} INFO - [2025-06-04T15:50:04.716+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/trigger_chain_dag.py
+[2025-06-04T15:50:04.748+0000] {processor.py:840} INFO - DAG(s) 'trigger_demo_etl' retrieved from /opt/airflow/dags/trigger_chain_dag.py
+[2025-06-04T15:50:04.773+0000] {logging_mixin.py:188} INFO - [2025-06-04T15:50:04.772+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-06-04T15:50:04.802+0000] {logging_mixin.py:188} INFO - [2025-06-04T15:50:04.802+0000] {dag.py:3823} INFO - Setting next_dagrun for trigger_demo_etl to 2025-06-04 00:00:00+00:00, run_after=2025-06-05 00:00:00+00:00
+[2025-06-04T15:50:04.832+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/trigger_chain_dag.py took 0.124 seconds
+[2025-06-04T15:50:35.141+0000] {processor.py:161} INFO - Started process (PID=186) to work on /opt/airflow/dags/trigger_chain_dag.py
+[2025-06-04T15:50:35.142+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/trigger_chain_dag.py for tasks to queue
+[2025-06-04T15:50:35.144+0000] {logging_mixin.py:188} INFO - [2025-06-04T15:50:35.144+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/trigger_chain_dag.py
+[2025-06-04T15:50:35.165+0000] {processor.py:840} INFO - DAG(s) 'trigger_demo_etl' retrieved from /opt/airflow/dags/trigger_chain_dag.py
+[2025-06-04T15:50:35.182+0000] {logging_mixin.py:188} INFO - [2025-06-04T15:50:35.182+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-06-04T15:50:35.201+0000] {logging_mixin.py:188} INFO - [2025-06-04T15:50:35.201+0000] {dag.py:3823} INFO - Setting next_dagrun for trigger_demo_etl to 2025-06-04 00:00:00+00:00, run_after=2025-06-05 00:00:00+00:00
+[2025-06-04T15:50:35.222+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/trigger_chain_dag.py took 0.083 seconds
+[2025-06-04T15:51:05.356+0000] {processor.py:161} INFO - Started process (PID=249) to work on /opt/airflow/dags/trigger_chain_dag.py
+[2025-06-04T15:51:05.357+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/trigger_chain_dag.py for tasks to queue
+[2025-06-04T15:51:05.359+0000] {logging_mixin.py:188} INFO - [2025-06-04T15:51:05.359+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/trigger_chain_dag.py
+[2025-06-04T15:51:05.379+0000] {processor.py:840} INFO - DAG(s) 'trigger_demo_etl' retrieved from /opt/airflow/dags/trigger_chain_dag.py
+[2025-06-04T15:51:05.407+0000] {logging_mixin.py:188} INFO - [2025-06-04T15:51:05.406+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-06-04T15:51:05.436+0000] {logging_mixin.py:188} INFO - [2025-06-04T15:51:05.436+0000] {dag.py:3823} INFO - Setting next_dagrun for trigger_demo_etl to 2025-06-04 00:00:00+00:00, run_after=2025-06-05 00:00:00+00:00
+[2025-06-04T15:51:05.466+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/trigger_chain_dag.py took 0.115 seconds
+[2025-06-04T15:51:36.120+0000] {processor.py:161} INFO - Started process (PID=311) to work on /opt/airflow/dags/trigger_chain_dag.py
+[2025-06-04T15:51:36.122+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/trigger_chain_dag.py for tasks to queue
+[2025-06-04T15:51:36.124+0000] {logging_mixin.py:188} INFO - [2025-06-04T15:51:36.124+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/trigger_chain_dag.py
+[2025-06-04T15:51:36.150+0000] {processor.py:840} INFO - DAG(s) 'trigger_demo_etl' retrieved from /opt/airflow/dags/trigger_chain_dag.py
+[2025-06-04T15:51:36.171+0000] {logging_mixin.py:188} INFO - [2025-06-04T15:51:36.170+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-06-04T15:51:36.191+0000] {logging_mixin.py:188} INFO - [2025-06-04T15:51:36.191+0000] {dag.py:3823} INFO - Setting next_dagrun for trigger_demo_etl to 2025-06-04 00:00:00+00:00, run_after=2025-06-05 00:00:00+00:00
+[2025-06-04T15:51:36.219+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/trigger_chain_dag.py took 0.102 seconds
