@@ -73,7 +73,7 @@ x-airflow-common:
     AIRFLOW__SMTP__SMTP_STARTTLS: 'True'
     AIRFLOW__SMTP__SMTP_SSL: 'False'
     AIRFLOW__SMTP__SMTP_PORT: 587
-    AIRFLOW__SMTP__SMTP_USER: "Your-Email"
+    AIRFLOW__SMTP__SMTP_USER: "sample@gmail.com"
     AIRFLOW__SMTP__SMTP_PASSWORD: "App_Password"
     AIRFLOW__SMTP__SMTP_MAIL_FROM: "Your-Email"
 

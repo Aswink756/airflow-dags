@@ -1,0 +1,30 @@
+[2025-06-04T15:07:01.922+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: auto_pull_dags_from_github.git_pull_latest_dags manual__2025-06-04T15:04:58.718274+00:00 [queued]>
+[2025-06-04T15:07:01.931+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: auto_pull_dags_from_github.git_pull_latest_dags manual__2025-06-04T15:04:58.718274+00:00 [queued]>
+[2025-06-04T15:07:01.932+0000] {taskinstance.py:2170} INFO - Starting attempt 2 of 2
+[2025-06-04T15:07:01.943+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): git_pull_latest_dags> on 2025-06-04 15:04:58.718274+00:00
+[2025-06-04T15:07:01.950+0000] {standard_task_runner.py:60} INFO - Started process 6803 to run task
+[2025-06-04T15:07:01.953+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'auto_pull_dags_from_github', 'git_pull_latest_dags', 'manual__2025-06-04T15:04:58.718274+00:00', '--job-id', '54', '--raw', '--subdir', 'DAGS_FOLDER/auto_pull_dags.py', '--cfg-path', '/tmp/tmpw2b6jeza']
+[2025-06-04T15:07:01.956+0000] {standard_task_runner.py:88} INFO - Job 54: Subtask git_pull_latest_dags
+[2025-06-04T15:07:02.027+0000] {task_command.py:423} INFO - Running <TaskInstance: auto_pull_dags_from_github.git_pull_latest_dags manual__2025-06-04T15:04:58.718274+00:00 [running]> on host 036d21481f2d
+[2025-06-04T15:07:02.078+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='aswin.b@sganlytics.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='auto_pull_dags_from_github' AIRFLOW_CTX_TASK_ID='git_pull_latest_dags' AIRFLOW_CTX_EXECUTION_DATE='2025-06-04T15:04:58.718274+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-04T15:04:58.718274+00:00'
+[2025-06-04T15:07:02.080+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-06-04T15:07:02.081+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /opt/***/dags && git pull origin main']
+[2025-06-04T15:07:02.090+0000] {subprocess.py:86} INFO - Output:
+[2025-06-04T15:07:02.092+0000] {subprocess.py:93} INFO - /usr/bin/bash: line 1: git: command not found
+[2025-06-04T15:07:02.092+0000] {subprocess.py:97} INFO - Command exited with return code 127
+[2025-06-04T15:07:02.100+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 127.
+[2025-06-04T15:07:02.103+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=auto_pull_dags_from_github, task_id=git_pull_latest_dags, execution_date=20250604T150458, start_date=20250604T150701, end_date=20250604T150702
+[2025-06-04T15:07:02.115+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/***/utils/email.py:154: RemovedInAirflow3Warning: Fetching SMTP credentials from configuration variables will be deprecated in a future release. Please set credentials using a connection instead.
+  send_mime_email(e_from=mail_from, e_to=recipients, mime_msg=msg, conn_id=conn_id, dryrun=dryrun)
+
+[2025-06-04T15:07:02.116+0000] {email.py:270} INFO - Email alerting: attempt 1
+[2025-06-04T15:07:03.850+0000] {email.py:281} INFO - Sent an alert email to ['aswin.b@sganlytics.com']
+[2025-06-04T15:07:05.960+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 54 for task git_pull_latest_dags (Bash command failed. The command returned a non-zero exit code 127.; 6803)
+[2025-06-04T15:07:05.987+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-06-04T15:07:06.011+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
