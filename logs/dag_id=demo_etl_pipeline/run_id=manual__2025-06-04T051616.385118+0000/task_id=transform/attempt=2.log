@@ -1,0 +1,25 @@
+[2025-06-04T05:16:51.705+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: demo_etl_pipeline.transform manual__2025-06-04T05:16:16.385118+00:00 [queued]>
+[2025-06-04T05:16:51.714+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: demo_etl_pipeline.transform manual__2025-06-04T05:16:16.385118+00:00 [queued]>
+[2025-06-04T05:16:51.715+0000] {taskinstance.py:2170} INFO - Starting attempt 2 of 2
+[2025-06-04T05:16:51.725+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): transform> on 2025-06-04 05:16:16.385118+00:00
+[2025-06-04T05:16:51.731+0000] {standard_task_runner.py:60} INFO - Started process 522 to run task
+[2025-06-04T05:16:51.734+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'demo_etl_pipeline', 'transform', 'manual__2025-06-04T05:16:16.385118+00:00', '--job-id', '10', '--raw', '--subdir', 'DAGS_FOLDER/sample_etl_dag.py', '--cfg-path', '/tmp/tmpq7wz0qr6']
+[2025-06-04T05:16:51.736+0000] {standard_task_runner.py:88} INFO - Job 10: Subtask transform
+[2025-06-04T05:16:51.802+0000] {task_command.py:423} INFO - Running <TaskInstance: demo_etl_pipeline.transform manual__2025-06-04T05:16:16.385118+00:00 [running]> on host 76ddeb3967d1
+[2025-06-04T05:16:51.849+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='demo_etl_pipeline' AIRFLOW_CTX_TASK_ID='transform' AIRFLOW_CTX_EXECUTION_DATE='2025-06-04T05:16:16.385118+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-04T05:16:16.385118+00:00'
+[2025-06-04T05:16:51.851+0000] {logging_mixin.py:188} INFO - ⚠️ Simulating failure in transform step
+[2025-06-04T05:16:51.851+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/sample_etl_dag.py", line 16, in transform
+    raise Exception("Simulated failure for demo purposes")
+Exception: Simulated failure for demo purposes
+[2025-06-04T05:16:51.861+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=demo_etl_pipeline, task_id=transform, execution_date=20250604T051616, start_date=20250604T051651, end_date=20250604T051651
+[2025-06-04T05:16:51.868+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 10 for task transform (Simulated failure for demo purposes; 522)
+[2025-06-04T05:16:51.907+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-06-04T05:16:51.928+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
